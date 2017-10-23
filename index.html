@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算器</title>
+	<meta charset="utf-8">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script src="./js/main.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	<!-- 计算器框架 -->
+			<div class="col-xs-12">
+				<!-- 结果显示 -->
+				<span id="numResult"></span>
+			</div>
+			<!-- 按钮 -->
+			<div class="col-xs-3" id="AC">
+				<button class="btn btn-block btn-danger buttonStyle">AC</button>
+			</div>
+			<div class="col-xs-3" id="CE">
+				<button class="btn btn-block btn-danger buttonStyle">CE</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-inverse buttonStyle" onclick="buttonClick('%')">%</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-inverse buttonStyle" onclick="buttonClick('/')">/</button>
+			</div>
+			<!-- 按钮 -->
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(7)">7</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(8)">8</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(9)">9</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-inverse buttonStyle" onclick="buttonClick('*')">*</button>
+			</div>
+			<!-- 按钮 -->
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(4)">4</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(5)">5</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(6)">6</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-inverse buttonStyle" onclick="buttonClick('-')">-</button>
+			</div>
+			<!-- 按钮 -->
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(1)">1</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(2)">2</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(3)">3</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-inverse buttonStyle" onclick="buttonClick('+')">+</button>
+			</div>
+			<!-- 按钮 -->
+			<div class="col-xs-3" id="space">
+				<button class="btn btn-block btn-primary buttonStyle" onclick="buttonClick('.')">.</button>
+			</div>
+			<div class="col-xs-3">
+				<button class="btn btn-block btn-info buttonStyle" onclick="buttonClick(0)">0</button>
+			</div>
+			<div class="col-xs-3" id="Ans">
+				<button class="btn btn-block btn-primary buttonStyle">Ans</button>
+			</div>
+			<div class="col-xs-3" id="calResult">
+				<button class="btn btn-block btn-warning buttonStyle">=</button>
+			</div>
+		</div>
+</div>
+</body>
+</html>
